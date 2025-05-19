@@ -1,3 +1,5 @@
+import 'package:chungju_lecture/login_page.dart';
+import 'package:chungju_lecture/signup_page.dart';
 import 'package:chungju_lecture/todo_local_page.dart';
 import 'package:chungju_lecture/todo_remote_page.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +34,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/todo-local': (context) => const TodoLocalPage(),
-        '/todo-remote': (context) => const TodoRemotePage()
+        '/todo-remote': (context) => const TodoRemotePage(),
+        '/login': (context) => const LoginPage(),
+        '/signup': (context) => const SignUpPage(),
       }
     );
   }
