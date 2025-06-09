@@ -1,4 +1,6 @@
 
+import 'package:chungju_lecture/chat_room_list_page.dart';
+import 'package:chungju_lecture/map_page.dart';
 import 'package:chungju_lecture/todo_remote_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,8 @@ class _MainTabPageState extends State<MainTabPage> {
   int _selectedIndex = 0;
   final List<Widget> _pages = const [
     TodoRemotePage(),
-    ChatPage()
+    ChatRoomListPage(),
+    MapPage()
   ];
 
   @override
@@ -37,7 +40,11 @@ class _MainTabPageState extends State<MainTabPage> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.chat_bubble_outline),
                 label: '채팅'
-            )
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.map),
+              label: '지도',
+            ),
           ]
       ),
     );
